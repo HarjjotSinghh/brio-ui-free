@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="64" viewBox="0 0 600 64" role="img" aria-labelledby="title">
+<title id="title">Free component rollout: 3 of 10 released</title>
+<rect width="600" height="64" rx="8" fill="#f1eee5"/>
+<text x="20" y="25" font-family="Arial, sans-serif" font-size="13" fill="#28251f">Free component rollout</text>
+<text x="580" y="25" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#28251f">3 / 10 released</text>
+<rect x="20" y="39" width="560" height="8" rx="4" fill="#d9d5cb"/>
+<rect x="20" y="39" width="168" height="8" rx="4" fill="#c6533d"/>
+</svg>

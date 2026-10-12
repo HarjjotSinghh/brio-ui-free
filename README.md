@@ -1,51 +1,34 @@
-# Brio UI: free components
+# Brio UI
 
-React components for the everyday parts of a website, each tested against the data that usually breaks them: long German words, Arabic right to left, odd numbers, empty and broken values, 320 px screens and reduced motion.
+React components with motion and the awkward edge cases handled. Copy one file. Make it yours.
 
-Every component is one file that imports only `react`, `react-dom` and `motion`. No Tailwind, no provider, no config. Copy it into your project and it's yours.
+[![MIT license](https://img.shields.io/badge/license-MIT-c6533d)](LICENSE)
+[![React 19](https://img.shields.io/badge/React-19-149eca)](https://react.dev/)
+[![TypeScript source](https://img.shields.io/badge/source-TypeScript-3178c6)](https://github.com/HarjjotSinghh/brio-ui/tree/main/components)
 
-These are the free components released so far, under the MIT license. More follow every two days until the full Brio UI launch in November 2026.
-
-## Components
-
-| Component | What it does | Docs and live demo |
+| [Pricing Toggle](docs/pricing-toggle.md) | [Code Input](docs/code-input.md) | [FAQ](docs/faq.md) |
 | --- | --- | --- |
-| [Pricing Toggle](components/pricing-toggle/pricing-toggle.tsx) | Monthly / yearly switch with odometer prices. Drag halfway and prices sit halfway; land on yearly and the badge peels, the old price strikes through. | [brioui.com/docs/components/pricing-toggle](https://brioui.com/docs/components/pricing-toggle?utm_source=github&utm_medium=readme&utm_campaign=free-components) |
-| [Code Input](components/code-input/code-input.tsx) | A calm code field with a caret that glides between underlined slots. Digits rise into place, pasted codes stream in, a line runs while checking, and on success the underlines join into one with a check. Optional masking. | [brioui.com/docs/components/code-input](https://brioui.com/docs/components/code-input?utm_source=github&utm_medium=readme&utm_campaign=free-components) |
-| [FAQ](components/faq/faq.tsx) | Accordion with deep links, ⌘F that finds text in closed answers, optional search with highlights, and FAQPage structured data for Google. | [brioui.com/docs/components/faq](https://brioui.com/docs/components/faq?utm_source=github&utm_medium=readme&utm_campaign=free-components) |
+| [![Pricing Toggle preview](assets/pricing-toggle.jpg)](components/pricing-toggle/pricing-toggle.tsx) | [![Code Input preview](assets/code-input.jpg)](components/code-input/code-input.tsx) | [![FAQ preview](assets/faq.jpg)](components/faq/faq.tsx) |
+| [Source](components/pricing-toggle/pricing-toggle.tsx) · [Usage](docs/pricing-toggle.md#usage) | [Source](components/code-input/code-input.tsx) · [Usage](docs/code-input.md#usage) | [Source](components/faq/faq.tsx) · [Usage](docs/faq.md#usage) |
 
-## Install
+![Free component rollout: 3 of 10 released](assets/rollout.svg)
 
-With the shadcn CLI, from the Brio UI registry:
+## Use it
+
+In a React 19 project, copy a component from [components/](components) and install its dependency:
 
 ```bash
-npx shadcn@latest add https://brioui.com/r/pricing-toggle.json
-npx shadcn@latest add https://brioui.com/r/code-input.json
-npx shadcn@latest add https://brioui.com/r/faq.json
+npm install motion
 ```
 
-Or add the `@brio` namespace to your `components.json` once:
+```tsx
+import { Faq } from './components/faq'
 
-```json
-{
-  "registries": {
-    "@brio": "https://brioui.com/r/{name}.json"
-  }
-}
+<Faq items={[{ q: 'Can I change this?', a: 'Yes. The source is yours.' }]} />
 ```
 
-and then run `npx shadcn@latest add @brio/pricing-toggle`.
+TypeScript source. Styles included. No Tailwind or provider required.
 
-Or copy the file from `components/` and run `npm install motion`. Requires React 19.
+Early release. These 3 components are [MIT licensed](LICENSE). Website docs and registry installs are rolling out; use the files here today.
 
-Each component's docs (props, usage, keyboard and accessibility notes, an agent prompt) are in `docs/` and on the site. Every docs page has a Markdown twin for coding agents: add `.md` to its URL.
-
-## The full library
-
-Brio UI launches in November 2026 with 50 components: 10 free under MIT and 40 Pro. Founding members, who join the waitlist before launch, get 50% off Pro for life.
-
-[Join the waitlist](https://brioui.com/?utm_source=github&utm_medium=readme&utm_campaign=free-components)
-
-## License
-
-MIT. See [LICENSE](LICENSE).
+[Brio UI](https://brioui.com/?utm_source=github&utm_medium=readme&utm_campaign=free-components) · [Report an issue](https://github.com/HarjjotSinghh/brio-ui/issues)
