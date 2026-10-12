@@ -4,7 +4,7 @@ React components with motion and the awkward edge cases handled. Copy one file. 
 
 [![MIT license](https://img.shields.io/badge/license-MIT-c6533d)](LICENSE)
 [![React 19](https://img.shields.io/badge/React-19-149eca)](https://react.dev/)
-[![TypeScript source](https://img.shields.io/badge/source-TypeScript-3178c6)](https://github.com/HarjjotSinghh/brio-ui/tree/main/components)
+[![TypeScript source](https://img.shields.io/badge/source-TypeScript-3178c6)](https://github.com/brio-ui/brio-ui/tree/main/components)
 
 | [Pricing Toggle](docs/pricing-toggle.md) | [Code Input](docs/code-input.md) | [FAQ](docs/faq.md) |
 | --- | --- | --- |
@@ -31,4 +31,4 @@ TypeScript source. Styles included. No Tailwind or provider required.
 
 Early release. These 3 components are [MIT licensed](LICENSE). Website docs and registry installs are rolling out; use the files here today.
 
-[Brio UI](https://brioui.com/?utm_source=github&utm_medium=readme&utm_campaign=free-components) · [Report an issue](https://github.com/HarjjotSinghh/brio-ui/issues)
+[Brio UI](https://brioui.com/?utm_source=github&utm_medium=readme&utm_campaign=free-components) · [Report an issue](https://github.com/brio-ui/brio-ui/issues)
