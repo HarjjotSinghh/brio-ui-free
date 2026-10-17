@@ -1,0 +1,18 @@
+name: Component or change request
+description: Ask for a new component or a change to one.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What are you building
+      description: Where would the component go and what is hard about it today.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What you would like
+      description: A new component or a change to an existing one. Brio UI ships composed patterns, not base primitives.
+    validations:
+      required: true

@@ -1,0 +1,37 @@
+name: Bug report
+description: A component breaks, looks wrong or behaves badly.
+labels: [bug]
+body:
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options: [Pricing Toggle, Code Input, FAQ, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected and what you saw instead.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Smallest code that shows it
+      render: tsx
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: React and motion versions
+      placeholder: React 19.2, motion 12.x
+    validations:
+      required: true
+  - type: input
+    id: setup
+    attributes:
+      label: Framework and browser
+      placeholder: Next.js 16 App Router, Safari 19

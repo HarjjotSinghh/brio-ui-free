@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Docs
+    url: https://brioui.com/docs
+    about: Install steps, props and framework guides.
+  - name: Security problem
+    url: mailto:hello@brioui.com
+    about: Email us instead of opening a public issue.
